@@ -1,0 +1,120 @@
+.form5{
+    align-items: center;
+    margin-top: 30%;
+    margin-left: 20%;
+}
+.input5, .button5 {
+    width: 90%;
+    position: relative;
+    padding: 10px;
+    border: 0.1px solid #575cb5;
+  }
+  
+  .button5 {
+    background: #6d74e3;
+    border: none;
+  }
+  
+  .wrapper5 {
+    position: relative;
+    transform: skewY(-14deg);
+  }
+  
+  .wrapper5 li, .button5 {
+    position: relative;
+    list-style: none;
+    width: 200px;
+    z-index: var(--i);
+    transition: 0.3s;
+    color: white;
+  }
+  
+  .wrapper5 li::before, .button5::before {
+    position: absolute;
+    content: '';
+    background: #6d74e3;
+    top: 0;
+    left: -40px;
+    width: 40px;
+    height: 36px;
+    transform-origin: right;
+    transform: skewY(45deg);
+    transition: 0.3s;
+  }
+  
+  .wrapper5 li::after, .button5::after {
+    position: absolute;
+    content: '';
+    background: #6d74e3;
+    width: 200px;
+    height: 40px;
+    top: -40px;
+    left: 0;
+    transform-origin: bottom;
+    transform: skewX(45deg);
+    transition: 0.3s;
+  }
+  
+  .wrapper5 li:nth-child(1)::after, .wrapper5 li:nth-child(1)::before {
+    background-color: #d8daf7;
+  }
+  
+  .wrapper5 li:nth-child(2)::after, .wrapper5 li:nth-child(2)::before {
+    background-color: #c2c5f3;
+  }
+  
+  .wrapper5 li:nth-child(3)::after, .wrapper5 li:nth-child(3)::before {
+    background-color: #989deb;
+  }
+  
+  li .input5 {
+    outline: none;
+    border: none;
+    color: black;
+  }
+  
+  li .input5::placeholder {
+    color: black;
+  }
+  
+  li:nth-child(1) .input5 {
+    background: #d8daf7;
+  }
+  
+  li:nth-child(2) .input5 {
+    background: #c2c5f3;
+  }
+  
+  li:nth-child(3) .input5 {
+    background: #989deb;
+  }
+  
+  
+  li:nth-child(1) .input5:focus {
+    outline: none;
+    border: 3.5px solid #d8daf7;
+  }
+  
+  li:nth-child(2) .input5:focus {
+    outline: none;
+    border: 3.5px solid #c2c5f3;
+  }
+  
+  li:nth-child(3) .input5:focus {
+    outline: none;
+    border: 3.5px solid #989deb;
+  }
+  
+  .wrapper li:hover, .button5:hover {
+    transform: translateX(-20px);
+  }
+  
+  .button5:hover, .button5:hover::before, .button5:hover::after {
+    background: #575cb5;
+  }
+  
+  .button5:active {
+    transform: translateX(0px);
+  }
+  
+  

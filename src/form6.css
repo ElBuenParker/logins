@@ -1,0 +1,137 @@
+.form6 {
+    margin-top: -7%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    position: relative;
+    background-color: #1a1a1a;
+    color: #fff;
+    border: 1px solid #333;
+  }
+  
+  .title6 {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    color: #dd4747;
+  }
+  
+  .title6::before {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .title6::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+  }
+  
+  .title6::before,
+  .title6::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: #dd4747;
+  }
+  
+  .message6, 
+  .signin6 {
+    font-size: 14.5px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .signin6 {
+    text-align: center;
+  }
+  
+  .signin6 a:hover {
+    text-decoration: underline royalblue;
+  }
+  
+  .signin6 a {
+    color: #47a4dd;
+  }
+  
+  .flex6 {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+  }
+  
+  .form6 label {
+    position: relative;
+  }
+  
+  .form6 label .input6 {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    padding: 20px 02px 05px 1px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+  }
+  
+  .form6 label .input6 + span {
+    color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  
+  .form6 label .input6:placeholder-shown + span {
+    top: 12.5px;
+    font-size: 0.9em;
+  }
+  
+  .form6 label .input6:focus + span,
+  .form6 label .input6:valid + span {
+    color: #cb7d77;
+    top: 0px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  
+  .input6 {
+    font-size: medium;
+  }
+  
+  .submit6 {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+    background-color: #cb2317;
+  }
+  
+  .submit6:hover {
+    background-color: #8b0b0b;
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+  
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
